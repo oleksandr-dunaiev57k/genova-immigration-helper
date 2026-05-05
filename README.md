@@ -6,7 +6,7 @@ permesso di soggiorno, codice fiscale, tessera sanitaria, residenza, school enro
 
 ## Why this exists
 I moved from Kharkiv, Ukraine to Genova in 2022. Getting documents was confusing 
-for my family — and it's confusing for thousands of others. This project documents 
+for my family - and it's confusing for thousands of others. This project documents 
 the real steps, with practical tips, in plain language.
 
 ## Status
@@ -14,9 +14,9 @@ the real steps, with practical tips, in plain language.
 
 ## Roadmap
 - [ ] Phase 1: Research (April 2026)
-- [ ] Phase 2: MVP — Notion-based guide for Ukrainians in Genova
+- [ ] Phase 2: MVP - Notion-based guide for Ukrainians in Genova
 - [ ] Phase 3: AI-powered document translator
 - [ ] Phase 4: Mobile app
 
 ## Author
-Oleksandr Dunaiev — 17, originally from Kharkiv (Ukraine), based in Genova.
+Oleksandr Dunaiev - 17, originally from Kharkiv (Ukraine), based in Genova.
