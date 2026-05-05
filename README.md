@@ -10,8 +10,7 @@ for my family — and it's confusing for thousands of others. This project docum
 the real steps, with practical tips, in plain language.
 
 ## Status
-🚧 Currently in research phase. Conducting interviews with 5-7 immigrants in Genova 
-to understand the most painful documentation issues.
+🚧 Currently in research phase. MVP, general goals and databases
 
 ## Roadmap
 - [ ] Phase 1: Research (April 2026)
