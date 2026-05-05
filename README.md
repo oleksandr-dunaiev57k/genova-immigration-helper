@@ -13,7 +13,7 @@ the real steps, with practical tips, in plain language.
 🚧 Currently in research phase. MVP, general goals and databases
 
 ## Roadmap
-- [ ] Phase 1: Research (April 2026)
+- [+] Phase 1: Research (April 2026)
 - [ ] Phase 2: MVP - Notion-based guide for Ukrainians in Genova
 - [ ] Phase 3: AI-powered document translator
 - [ ] Phase 4: Mobile app
