@@ -12,10 +12,10 @@ export default function HomeVariant2() {
             </div>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm text-gray-600">
-            <a href="#" className="hover:text-orange-500 transition-colors">Документы</a>
-            <a href="#" className="hover:text-orange-500 transition-colors">Учреждения</a>
-            <a href="#" className="hover:text-orange-500 transition-colors">FAQ</a>
-            <a href="#" className="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition-colors">
+            <a href="/documents" className="hover:text-orange-500 transition-colors">Документы</a>
+            <a href="/institutions" className="hover:text-orange-500 transition-colors">Учреждения</a>
+            <a href="/faq" className="hover:text-orange-500 transition-colors">FAQ</a>
+            <a href="/chat" className="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition-colors">
               💬 Спросить
             </a>
           </nav>
@@ -45,13 +45,13 @@ export default function HomeVariant2() {
             </p>
             <div className="flex flex-wrap gap-4">
               <a
-                href="#"
+                href="/documents"
                 className="bg-orange-500 text-white font-semibold px-8 py-4 rounded-2xl hover:bg-orange-600 transition-colors shadow-lg shadow-orange-200 text-sm"
               >
                 С чего начать? →
               </a>
               <a
-                href="#"
+                href="/documents"
                 className="bg-white text-gray-700 font-semibold px-8 py-4 rounded-2xl hover:bg-gray-50 transition-colors border border-gray-200 text-sm"
               >
                 💬 Спросить ИИ
@@ -125,16 +125,16 @@ export default function HomeVariant2() {
           <p className="text-gray-400 text-center mb-10">Нажми на любой — расскажем как получить</p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { emoji: "🪪", title: "Codice Fiscale", desc: "Налоговый номер. Нужен для всего.", color: "bg-blue-50 border-blue-100" },
-              { emoji: "📋", title: "Permesso di Soggiorno", desc: "Вид на жительство. Первый приоритет.", color: "bg-red-50 border-red-100" },
-              { emoji: "🏥", title: "Tessera Sanitaria", desc: "Медицинская карта. Бесплатная.", color: "bg-green-50 border-green-100" },
-              { emoji: "🏠", title: "Residenza", desc: "Прописка по месту жительства.", color: "bg-yellow-50 border-yellow-100" },
-              { emoji: "🪪", title: "Carta d'identità", desc: "Итальянское удостоверение.", color: "bg-purple-50 border-purple-100" },
-              { emoji: "🎓", title: "Школа", desc: "Запись детей в итальянскую школу.", color: "bg-orange-50 border-orange-100" },
+              { emoji: "🪪", title: "Codice Fiscale", desc: "Налоговый номер. Нужен для всего.", color: "bg-blue-50 border-blue-100", href: "/documents/codice-fiscale" },
+              { emoji: "📋", title: "Permesso di Soggiorno", desc: "Вид на жительство. Первый приоритет.", color: "bg-red-50 border-red-100", href: "/documents/permesso-di-soggiorno" },
+              { emoji: "🏥", title: "Tessera Sanitaria", desc: "Медицинская карта. Бесплатная.", color: "bg-green-50 border-green-100", href: "/documents/tessera-sanitaria" },
+              { emoji: "🏠", title: "Residenza", desc: "Прописка по месту жительства.", color: "bg-yellow-50 border-yellow-100", href: "/documents/residenza" },
+              { emoji: "🪪", title: "Carta d'identità", desc: "Итальянское удостоверение.", color: "bg-purple-50 border-purple-100", href: "/documents/carta-identita" },
+              { emoji: "🎓", title: "Школа", desc: "Запись детей в итальянскую школу.", color: "bg-orange-50 border-orange-100", href: "/documents/scuola" },
             ].map((doc) => (
               <a
                 key={doc.title}
-                href="#"
+                href={doc.href}
                 className={`${doc.color} border rounded-2xl p-5 hover:shadow-md transition-shadow`}
               >
                 <div className="text-3xl mb-3">{doc.emoji}</div>
@@ -156,7 +156,7 @@ export default function HomeVariant2() {
               ИИ-ассистент знает всё о документах, учреждениях и процедурах в Генуе. Отвечает на русском и украинском.
             </p>
             <a
-              href="#"
+              href="/documents"
               className="inline-block bg-white text-orange-500 font-semibold px-8 py-3 rounded-2xl hover:bg-orange-50 transition-colors"
             >
               Начать чат →
@@ -170,9 +170,9 @@ export default function HomeVariant2() {
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
           <div>🇮🇹 Genova Helper — сделано с душой для своих</div>
           <div className="flex gap-4">
-            <a href="#" className="hover:text-gray-600">О проекте</a>
-            <a href="#" className="hover:text-gray-600">Контакты</a>
-            <a href="#" className="hover:text-gray-600">GitHub</a>
+            <a href="/documents" className="hover:text-gray-600">О проекте</a>
+            <a href="/documents" className="hover:text-gray-600">Контакты</a>
+            <a href="/documents" className="hover:text-gray-600">GitHub</a>
           </div>
         </div>
       </footer>
