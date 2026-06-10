@@ -2,7 +2,7 @@ export default function HomeVariant2() {
   return (
     <div className="min-h-screen font-sans" style={{ background: "#faf7f2" }}>
       {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-10">
+      <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="text-3xl">🇮🇹</span>
@@ -32,7 +32,7 @@ export default function HomeVariant2() {
       <section className="relative overflow-hidden py-16 px-6">
         <div className="max-w-6xl mx-auto flex items-center gap-10">
           {/* Text */}
-          <div className="flex-1 z-10">
+          <div className="flex-1">
             <div className="inline-block bg-orange-100 text-orange-600 text-sm font-medium px-4 py-2 rounded-full mb-6">
               🌊 Генуя, Италия
             </div>
