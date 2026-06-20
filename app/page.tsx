@@ -51,7 +51,7 @@ export default function HomeVariant2() {
                 С чего начать? →
               </a>
               <a
-                href="/documents"
+                href="/chat"
                 className="bg-white text-gray-700 font-semibold px-8 py-4 rounded-2xl hover:bg-gray-50 transition-colors border border-gray-200 text-sm"
               >
                 💬 Спросить ИИ
@@ -156,7 +156,7 @@ export default function HomeVariant2() {
               ИИ-ассистент знает всё о документах, учреждениях и процедурах в Генуе. Отвечает на русском и украинском.
             </p>
             <a
-              href="/documents"
+              href="/chat"
               className="inline-block bg-white text-orange-500 font-semibold px-8 py-3 rounded-2xl hover:bg-orange-50 transition-colors"
             >
               Начать чат →
