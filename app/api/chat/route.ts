@@ -1,4 +1,4 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import Groq from "groq-sdk";
 
 const SYSTEM_PROMPT = `Ты — ИИ-ассистент сайта Genova Helper, помощник для иммигрантов из стран СНГ (Россия, Украина, Беларусь) в Генуе, Италия.
 
@@ -17,27 +17,25 @@ const SYSTEM_PROMPT = `Ты — ИИ-ассистент сайта Genova Helper
 export async function POST(request: Request) {
   const { messages } = await request.json();
 
-  const apiKey = process.env.GEMINI_API_KEY;
+  const apiKey = process.env.GROQ_API_KEY;
   if (!apiKey) {
     return Response.json({ error: "API key not configured" }, { status: 500 });
   }
 
-  const genAI = new GoogleGenerativeAI(apiKey);
-  const model = genAI.getGenerativeModel({
-    model: "gemini-1.5-flash",
-    systemInstruction: SYSTEM_PROMPT,
+  const groq = new Groq({ apiKey });
+
+  const completion = await groq.chat.completions.create({
+    model: "llama-3.3-70b-versatile",
+    messages: [
+      { role: "system", content: SYSTEM_PROMPT },
+      ...messages.map((m: { role: string; content: string }) => ({
+        role: m.role === "assistant" ? "assistant" : "user",
+        content: m.content,
+      })),
+    ],
+    max_tokens: 1024,
   });
 
-  const history = messages.slice(0, -1).map((m: { role: string; content: string }) => ({
-    role: m.role === "assistant" ? "model" : "user",
-    parts: [{ text: m.content }],
-  }));
-
-  const lastMessage = messages[messages.length - 1];
-
-  const chat = model.startChat({ history });
-  const result = await chat.sendMessage(lastMessage.content);
-  const text = result.response.text();
-
+  const text = completion.choices[0]?.message?.content ?? "Произошла ошибка.";
   return Response.json({ message: text });
 }
