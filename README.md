@@ -10,12 +10,12 @@ for my family - and it's confusing for thousands of others. This project documen
 the real steps, with practical tips, in plain language.
 
 ## Status
-🚧 Currently in research phase. MVP, general goals and databases
+🔨 Currently in MVP phase. Website live with AI chatbot on Vercel.
 
 ## Roadmap
-- [+] Phase 1: Research (April 2026)
-- [ ] Phase 2: MVP - Notion-based guide for Ukrainians in Genova
-- [ ] Phase 3: AI-powered document translator
+- [x] Phase 1: Research (April 2026)
+- [~] Phase 2: MVP - Next.js website with AI assistant for CIS immigrants in Genova
+- [ ] Phase 3: Multi-language support (RU/UA/EN/IT)
 - [ ] Phase 4: Mobile app
 
 ## Author
