@@ -143,6 +143,28 @@ export default function ChatPage() {
         <p className="text-xs text-gray-400 text-center mt-3">
           ИИ может ошибаться. Важные вопросы уточняй в официальных учреждениях.
         </p>
+
+        {/* Telegram bot promo */}
+        <div className="mt-6 bg-white border border-gray-200 rounded-2xl p-4 flex items-center gap-4">
+          <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "#29A8EB" }}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.14 14.028l-2.95-.924c-.64-.203-.658-.64.136-.954l11.57-4.46c.536-.194 1.004.131.998.531z"/>
+            </svg>
+          </div>
+          <div className="flex-1 min-w-0">
+            <div className="font-semibold text-gray-800 text-sm">Telegram-бот @genova_helper_bot</div>
+            <div className="text-gray-400 text-xs">Тот же ИИ-помощник прямо в Telegram — удобно с телефона</div>
+          </div>
+          <a
+            href="https://t.me/genova_helper_bot"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-shrink-0 text-sm font-semibold px-4 py-2 rounded-xl text-white transition-colors"
+            style={{ background: "#29A8EB" }}
+          >
+            Открыть →
+          </a>
+        </div>
       </div>
     </div>
   );

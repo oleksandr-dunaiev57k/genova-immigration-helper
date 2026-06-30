@@ -111,9 +111,23 @@ export default function HomePage() {
             <div className="text-5xl mb-4">🤖</div>
             <h3 className="text-2xl font-bold mb-3">{h.chat_h}</h3>
             <p className="text-orange-100 mb-8 max-w-md mx-auto">{h.chat_sub}</p>
-            <a href="/chat" className="inline-block bg-white text-orange-500 font-semibold px-8 py-3 rounded-2xl hover:bg-orange-50 transition-colors">
-              {h.chat_btn}
-            </a>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <a href="/chat" className="inline-block bg-white text-orange-500 font-semibold px-8 py-3 rounded-2xl hover:bg-orange-50 transition-colors">
+                {h.chat_btn}
+              </a>
+              <a
+                href="https://t.me/genova_helper_bot"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-white/20 text-white font-semibold px-8 py-3 rounded-2xl hover:bg-white/30 transition-colors border border-white/30"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.14 14.028l-2.95-.924c-.64-.203-.658-.64.136-.954l11.57-4.46c.536-.194 1.004.131.998.531z"/>
+                </svg>
+                {h.tg_btn}
+              </a>
+            </div>
+            <p className="text-orange-200 text-sm mt-4">{h.tg_sub}</p>
           </div>
         </div>
       </section>
