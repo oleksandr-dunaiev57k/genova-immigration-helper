@@ -3,7 +3,9 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useCity } from "@/contexts/CityContext";
 import { getDocTranslation } from "@/lib/doc-translations";
+import { cities, DOC_INSTITUTION_MAP } from "@/lib/cities";
 
 const ALERT_STYLES = {
   red: { wrap: "bg-red-50 border-red-200", title: "text-red-700", text: "text-red-600" },
@@ -13,7 +15,12 @@ const ALERT_STYLES = {
 
 export default function DocPage({ slug }: { slug: string }) {
   const { lang, t } = useLanguage();
+  const { city } = useCity();
   const d = getDocTranslation(slug, lang);
+
+  const institutionKey = DOC_INSTITUTION_MAP[slug];
+  const cityData = cities[city];
+  const cityInstitution = institutionKey ? cityData.institutions[institutionKey] : null;
 
   if (!d) return null;
 
@@ -89,17 +96,21 @@ export default function DocPage({ slug }: { slug: string }) {
           ))}
         </div>
 
-        {/* Address */}
-        {d.address && (
-          <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-8">
-            <h2 className="font-bold text-blue-800 mb-3">{d.address.title}</h2>
-            <div className="text-sm text-blue-700 space-y-1">
-              <div className="font-medium">{d.address.name}</div>
-              <div>{d.address.address}</div>
-              <div>{d.address.hours}</div>
+        {/* Address — city-specific */}
+        {(cityInstitution || d.address) && (() => {
+          const inst = cityInstitution ?? { name: d.address!.name, address: d.address!.address, hours: d.address!.hours };
+          const title = d.address?.title ?? `📍 Где в ${cityData.label}`;
+          return (
+            <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-8">
+              <h2 className="font-bold text-blue-800 mb-3">📍 Где в {cityData.label}</h2>
+              <div className="text-sm text-blue-700 space-y-1">
+                <div className="font-medium">{inst.name}</div>
+                <div>{inst.address}</div>
+                <div>{inst.hours}</div>
+              </div>
             </div>
-          </div>
-        )}
+          );
+        })()}
 
         {/* FAQ */}
         {d.faq && (

@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import { CityProvider } from "@/contexts/CityContext";
 
 export const metadata: Metadata = {
-  title: "Genova Immigration Helper",
-  description: "Помощь иммигрантам из СНГ в Генуе, Италия",
+  title: "Via Italia — Помощь иммигрантам",
+  description: "Помощь иммигрантам из СНГ по всей Италии — документы, учреждения, советы",
 };
 
 export default function RootLayout({
@@ -15,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="ru" className="h-full antialiased">
       <body className="min-h-full flex flex-col">
-        <LanguageProvider>{children}</LanguageProvider>
+        <LanguageProvider>
+          <CityProvider>{children}</CityProvider>
+        </LanguageProvider>
       </body>
     </html>
   );
