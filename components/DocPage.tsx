@@ -102,7 +102,7 @@ export default function DocPage({ slug }: { slug: string }) {
           const title = d.address?.title ?? `📍 Где в ${cityData.label}`;
           return (
             <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-8">
-              <h2 className="font-bold text-blue-800 mb-3">📍 Где в {cityData.label}</h2>
+              <h2 className="font-bold text-blue-800 mb-3">📍 {t.where_in} {cityData.label}</h2>
               <div className="text-sm text-blue-700 space-y-1">
                 <div className="font-medium">{inst.name}</div>
                 <div>{inst.address}</div>

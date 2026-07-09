@@ -9,6 +9,7 @@ export const translations = {
       ask: "💬 Спросить",
     },
     subtitle_navbar: "для своих",
+    where_in: "Где в",
     home: {
       badge: "🇮🇹 Помощь по всей Италии",
       h1a: "Переехать в Италию —",
@@ -191,6 +192,7 @@ export const translations = {
       ask: "💬 Запитати",
     },
     subtitle_navbar: "для своїх",
+    where_in: "Де в",
     home: {
       badge: "🇮🇹 Допомога по всій Італії",
       h1a: "Переїхати до Італії —",
