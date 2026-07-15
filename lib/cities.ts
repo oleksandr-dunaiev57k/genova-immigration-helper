@@ -24,8 +24,8 @@ export const cities: Record<CityCode, { label: string; institutions: CityInstitu
       },
       questura: {
         name: "Questura di Genova — Ufficio Immigrazione",
-        address: "Via Armando Diaz 2, 16121 Genova",
-        hours: "Пн–Пт: 9:00–13:00 (тільки за записом)",
+        address: "Via Gabriele D'Annunzio 80, 16121 Genova",
+        hours: "Пн–Чт: 8:30–13:30, 15:00–18:00 · Пт: 8:30–13:30 (тільки за записом)",
       },
       comune: {
         name: "Comune di Genova — Sportello Anagrafe",
