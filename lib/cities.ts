@@ -48,9 +48,9 @@ export const cities: Record<CityCode, { label: string; institutions: CityInstitu
         hours: "Пн–Пт: 8:30–12:30 · Пн–Вт–Чт: 14:00–16:00",
       },
       questura: {
-        name: "Questura di Milano",
-        address: "Via Fatebenefratelli 11, 20121 Milano",
-        hours: "Пн–Вт: 8:30–12:00 · Чт: 14:00–16:00",
+        name: "Questura di Milano — Ufficio Immigrazione",
+        address: "Via Montebello 26, 20121 Milano",
+        hours: "Пн–Пт: за записом",
       },
       comune: {
         name: "Comune di Milano — Sportello Anagrafe",
@@ -73,9 +73,9 @@ export const cities: Record<CityCode, { label: string; institutions: CityInstitu
         hours: "Пн–Пт: 8:30–12:30 · Пн–Чт: 14:00–16:00",
       },
       questura: {
-        name: "Questura di Roma",
-        address: "Via San Vitale 15, 00184 Roma",
-        hours: "Пн–Пт: 8:30–12:00",
+        name: "Questura di Roma — Ufficio Immigrazione",
+        address: "Via Teofilo Patini 23, 00155 Roma",
+        hours: "Пн–Пт: 8:00–13:30 · Вт–Чт: 15:00–17:00",
       },
       comune: {
         name: "Comune di Roma — Municipio",
@@ -98,9 +98,9 @@ export const cities: Record<CityCode, { label: string; institutions: CityInstitu
         hours: "Пн–Вт–Чт: 8:30–13:00, 14:00–16:30 · Ср–Пт: 8:30–13:00",
       },
       questura: {
-        name: "Questura di Torino",
-        address: "Corso Vinzaglio 10, 10121 Torino",
-        hours: "Пн–Пт: 8:30–12:00",
+        name: "Questura di Torino — Ufficio Immigrazione",
+        address: "Via Fratelli Ruffini 11, 10122 Torino",
+        hours: "Пн–Чт: 8:30–13:30 · Пт: 8:30–13:00",
       },
       comune: {
         name: "Comune di Torino — Sportello Anagrafe",
@@ -123,9 +123,9 @@ export const cities: Record<CityCode, { label: string; institutions: CityInstitu
         hours: "Пн–Пт: 8:30–12:30 · Пн–Чт: 14:00–16:00",
       },
       questura: {
-        name: "Questura di Napoli",
-        address: "Via Medina 75, 80133 Napoli",
-        hours: "Пн–Пт: 8:30–12:00",
+        name: "Questura di Napoli — Ufficio Immigrazione",
+        address: "Via Galileo Ferraris 131, 80142 Napoli",
+        hours: "Пн–Пт: 8:30–13:00 · Пн–Чт: 14:30–17:00",
       },
       comune: {
         name: "Comune di Napoli — Anagrafe",
@@ -148,9 +148,9 @@ export const cities: Record<CityCode, { label: string; institutions: CityInstitu
         hours: "Пн–Пт: 8:30–12:30 · Вт–Чт: 14:00–16:00",
       },
       questura: {
-        name: "Questura di Bologna",
-        address: "Piazza Galileo 7, 40123 Bologna",
-        hours: "Пн–Пт: 8:30–12:00",
+        name: "Questura di Bologna — Ufficio Immigrazione",
+        address: "Via Bovi Campeggi 13/3, 40131 Bologna",
+        hours: "Пн–Пт: 8:30–12:30",
       },
       comune: {
         name: "Comune di Bologna — Anagrafe",
@@ -173,9 +173,9 @@ export const cities: Record<CityCode, { label: string; institutions: CityInstitu
         hours: "Пн–Вт–Чт: 8:30–13:00, 14:00–16:30 · Ср–Пт: 8:30–13:00",
       },
       questura: {
-        name: "Questura di Firenze",
-        address: "Via Zara 2, 50129 Firenze",
-        hours: "Пн–Пт: 8:30–12:00",
+        name: "Questura di Firenze — Ufficio Immigrazione",
+        address: "Via della Fortezza 17, 50129 Firenze",
+        hours: "Пн–Пт: 8:30–12:30",
       },
       comune: {
         name: "Comune di Firenze — Anagrafe",
@@ -198,9 +198,9 @@ export const cities: Record<CityCode, { label: string; institutions: CityInstitu
         hours: "Пн–Пт: 8:30–12:30 · Пн–Чт: 14:00–16:00",
       },
       questura: {
-        name: "Questura di Palermo",
-        address: "Piazza della Vittoria 8, 90100 Palermo",
-        hours: "Пн–Пт: 8:30–12:00",
+        name: "Questura di Palermo — Ufficio Immigrazione",
+        address: "Via San Lorenzo Colli 271, 90146 Palermo",
+        hours: "Пн–Пт: 8:30–12:30",
       },
       comune: {
         name: "Comune di Palermo — Anagrafe",
