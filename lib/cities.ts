@@ -23,9 +23,9 @@ export const cities: Record<CityCode, { label: string; institutions: CityInstitu
         hours: "Пн–Вт: 8:30–13:00, 14:00–16:30 · Ср: 8:30–13:00",
       },
       questura: {
-        name: "Questura di Genova",
-        address: "Via Bartolomeo Bosco 24, 16121 Genova",
-        hours: "Пн–Вт–Чт: 8:30–12:00 · Ср–Пт: 8:30–11:00",
+        name: "Questura di Genova — Ufficio Immigrazione",
+        address: "Via Armando Diaz 2, 16121 Genova",
+        hours: "Пн–Пт: 9:00–13:00 (тільки за записом)",
       },
       comune: {
         name: "Comune di Genova — Sportello Anagrafe",
